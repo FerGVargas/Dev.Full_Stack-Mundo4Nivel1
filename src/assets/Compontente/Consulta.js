@@ -1,4 +1,4 @@
-// Tela de Condulta dos Fornecedores
+// Tela de Consulta dos Fornecedores Cadastrados
 
 import React, { useState } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
