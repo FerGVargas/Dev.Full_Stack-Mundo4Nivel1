@@ -1,3 +1,5 @@
+//Tela de Cadastro dos Fornecedores com alert
+
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native'; 
 import { Text, View, TextInput, Button, StyleSheet, Alert, Image, TouchableOpacity } from 'react-native';
