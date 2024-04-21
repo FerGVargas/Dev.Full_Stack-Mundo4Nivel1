@@ -1,38 +1,28 @@
-// Consulta.js
-import React from 'react';
-import { View, Button } from 'react-native';
+// Tela de Condulta dos Fornecedores
 
-function Consulta({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button title="Ir para o cadastro" onPress={() => navigation.navigate('Register')} />
-    </View>
-  );
-}
+import React, { useState } from 'react';
+import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 
-
-const UserScreen = () => {
-
-
+function UserScreen() {
 
   const [users, setUsers] = useState([
-    { id: 1, name: 'João', photo: require('./assets/joao.jpg') },
-    { id: 2, name: 'Maria', photo: require('./assets/maria.jpg') },
-    { id: 3, name: 'José', photo: require('./assets/jose.jpg') },
-    { id: 4, name: 'Júlia', photo: require('./assets/julia.jpg') },
-    { id: 5, name: 'Ana', photo: require('./assets/ana.jpg') },
-    { id: 6, name: 'Enzo', photo: require('./assets/enzo.jpg') },
-    { id: 7, name: 'Fabio', photo: require('./assets/fabio.jpg') },
-    { id: 8, name: 'Lilia', photo: require('./assets/lilia.jpg') },
-    { id: 9, name: 'Bruce', photo: require('./assets/bruce.jpg') },
-    { id: 10, name: 'Aline', photo: require('./assets/aline.jpg') },
-    { id: 11, name: 'Caio', photo: require('./assets/caio.jpg') },
-    { id: 12, name: 'Beto', photo: require('./assets/beto.jpg') },
-    // Adicione mais usuários conforme necessário
+    { id: 1, name: 'Ponto a ponto de Coração', photo: require('./assets/pontoaponto.png') },
+    { id: 2, name: 'Maria Flor Laços', photo: require('./assets/lacos.png') },
+    { id: 3, name: 'José Agua Potável', photo: require('./assets/agua.png') },
+    { id: 4, name: 'Júlia Graphic Design', photo: require('./assets/gd.png') },
+    { id: 5, name: 'Ana das Frutas', photo: require('./assets/frutas.png') },
+    { id: 6, name: 'Enzo Radiadores', photo: require('./assets/radiador.png') },
+    { id: 7, name: 'Fabio Auditor', photo: require('./assets/auditor.png') },
+    { id: 8, name: 'Stilo com a Lilia', photo: require('./assets/roupas.png') },
+    { id: 9, name: 'Bruce Music', photo: require('./assets/music.png') },
+    { id: 10, name: 'Aline in the Book', photo: require('./assets/book.jpg') },
+    { id: 11, name: 'Caio Bike', photo: require('./assets/bike.png') },
+    { id: 12, name: 'Beto açai', photo: require('./assets/acai.jpg') },
+    { id: 13, name: 'Caios', photo: require('./assets/caio.jpg') },
   ]);
 
   const handleUserPress = (userId) => {
-    // Implementar a lógica para quando um usuário for pressionado
+
     console.log(`Usuário ${userId} pressionado`);
   };
 
@@ -48,7 +38,7 @@ const UserScreen = () => {
       ))}
     </ScrollView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   scrollViewContainer: {
@@ -72,6 +62,4 @@ const styles = StyleSheet.create({
   },
 });
 
-
-
-export default Consulta;
+export default UserScreen;
